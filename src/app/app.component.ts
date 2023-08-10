@@ -7,15 +7,15 @@ import { WikipediaService } from './wikipedia.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  searchList = [];
+  searchList:{name:string,snippet:string,pageid:number}[] = [];
   constructor(private wikipedia:WikipediaService){
 
   }
   onTerm(term:string){
     // console.log(term);
-   this.wikipedia.search(term).subscribe((response:any)=>{
+   this.wikipedia.search(term).subscribe((response)=>{
     console.log(response);
-    this.searchList = response.query.search
+    this.searchList = response;
    });
     
   }
