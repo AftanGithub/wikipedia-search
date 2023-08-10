@@ -1,5 +1,8 @@
 # Wsearch
 
+![preview](https://github.com/AftanGithub/wikipedia-search/assets/75898512/a6041e17-f791-4317-a430-b88a9308e6fd)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
 ## Development server
